@@ -1,0 +1,11 @@
+<div class="upload-btn-wrapper">
+    <input class="test" type="text" value="{{fileName}}"/>
+  <button class="btn">Upload a file</button>
+  <input type="file" name="myfile" (change)="selectFile($event)" />
+</div>
+<div>
+    <button class="btn" (click)="uploadfile()">Submit</button><br>
+</div>
+<a *ngIf='fileUrl !==""'>
+<a href="{{fileUrl}}">Download File</a>
+</a>
